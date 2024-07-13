@@ -1,0 +1,427 @@
+{!! $header !!}
+
+
+<!--FIXED CTA-->
+<div class="fixed_cta">
+    <a href="#entry"><img src="img/fixed_cta_icon.png" alt="エントリー"><p>応募する</p></a>
+</div><!--fixed_cta-->
+
+
+<!--MV-->
+<section id="mv">
+
+</section><!--mv-->
+
+
+
+<!--ENTRY-->
+<section id="entry" class="entry_status">
+	<div class="cts">
+		<div class="titles">
+			<div class="icon inviewfadeInUp"><img src="img/entry_icon.svg" alt="ENTRY"></div>
+			<h2 class="inviewfadeInUp">応募フォーム</h2>
+		</div><!--titles-->
+
+		<div class="entry_form">
+			{!! $steps !!}
+
+			<div class="entry_cts">
+				<p class="q">Q{{$question_no}}</p>
+				<p class="question">現在就業していますか？</p>
+			
+				<form action="{{ $next_url }}" method="post">
+					<div class="answer">
+						@foreach($datas->status->radio_vals as $val)
+							<p><input type="radio" name="status" id="status_{{ $loop->iteration }}" class="style_status" value="{{ $datas->status->radio_vals[$loop->index] }}" {{ $datas->status->radio_checked[$loop->index] }}><label for="status_{{ $loop->iteration }}">{{ $datas->status->radio_vals[$loop->index] }}</label></p>
+						@endforeach
+					</div><!--answer-->
+                    <span class="warning" id="status_error"></span>
+
+					<div class="btns">
+						<div class="btn"><input type="submit" value="次へ" class="style_submit"></div>
+					</div><!--btns-->
+				</form>
+			</div><!--entry_cts-->
+		</div><!--entry_form-->
+	</div><!--cts-->
+</section><!--entry-->
+
+
+
+<!--INTRO-->
+<section id="intro">
+	<div class="cts">
+		<div class="titles">
+			<div class="icon inviewfadeInUp"><img src="img/intro_icon.svg" alt="INTRO"></div>
+			<h2 class="inviewfadeInUp">●●●タイトル●●●</h2>
+		</div><!--titles-->
+
+		<div class="details">
+			<div class="detail">
+				<div class="photo"><img src="img/intro_1.jpg" alt=""></div>
+				<h3>●●●キャッチコピー●●●</h3>
+				<p class="ex">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+			</div><!--detail-->
+
+			<div class="detail">
+				<div class="photo"><img src="img/intro_2.jpg" alt=""></div>
+				<h3>●●●キャッチコピー●●●</h3>
+				<p class="ex">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+			</div><!--detail-->
+
+			<div class="detail">
+				<div class="photo"><img src="img/intro_3.jpg" alt=""></div>
+				<h3>●●●キャッチコピー●●●</h3>
+				<p class="ex">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+			</div><!--detail-->
+		</div><!--details-->
+	</div><!--cts-->
+</section><!--intro-->
+
+
+
+<!--ABOUT-->
+<section id="about">
+	<div class="cts">
+		<div class="details">
+			<h3>●●●キャッチコピー●●●</h3>
+			<div class="detail">
+				<h3>●●●キャッチコピー●●●</h3>
+				<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+			</div><!--detail-->
+		</div><!--details-->
+	</div><!--cts-->
+</section><!--about-->
+
+
+
+<!--SCENE-->
+<section id="scene">
+	<div class="scene_slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/scene_1.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/scene_2.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/scene_3.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/scene_4.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/scene_5.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/scene_6.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/scene_7.jpg" alt=""></div>
+		</div><!--swiper-wrapper-->
+	</div><!--scene_slider-->	
+</section><!--scene-->
+
+
+
+<!--CTA-->
+<section class="cta">
+	<div class="cts">
+		<div class="copies">
+			<p class="subcopy">業界未経験も歓迎</p>
+			<p class="maincopy">興味ある方はまずはお気軽に<br>お問い合わせください！</p>
+		</div><!--copies-->
+		<div class="cta_btn"><a href="#entry"><p>エントリーする</p><div class="arrow"></div></a></div>
+	</div><!--cts-->
+</section><!--cta-->
+
+
+
+<!--FEATURE-->
+<section id="feature">
+	<div class="cts">
+		<div class="titles">
+			<div class="icon inviewfadeInUp"><img src="img/feature_icon.svg" alt="3つの特徴"></div>
+			<h2 class="inviewfadeInUp">3つの<span class="fr">特徴</span></h2>
+			<p class="copy inviewfadeInUp">●●●キャッチコピー●●●</p>
+		</div><!--titles-->
+
+		<div class="features">
+			<div class="feature">
+				<div class="photo photo1"></div>
+				<div class="detail">
+					<p class="number">POINT 1</p>
+					<h3>●●●キャッチコピー●●●</h3>
+					<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+				</div><!--detail-->
+			</div><!--feature-->
+
+			<div class="feature">
+				<div class="photo photo2"></div>
+				<div class="detail">
+					<p class="number">POINT 2</p>
+					<h3>●●●キャッチコピー●●●</h3>
+					<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+				</div><!--detail-->
+			</div><!--feature-->
+
+			<div class="feature">
+				<div class="photo photo3"></div>
+				<div class="detail">
+					<p class="number">POINT 3</p>
+					<h3>●●●キャッチコピー●●●</h3>
+					<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+				</div><!--detail-->
+			</div><!--feature-->
+		</div><!--features-->
+	</div><!--cts-->
+</section>
+
+
+
+<!--CTA-->
+<section class="cta">
+	<div class="cts">
+		<div class="copies">
+			<p class="subcopy">業界未経験も歓迎</p>
+			<p class="maincopy">興味ある方はまずはお気軽に<br>お問い合わせください！</p>
+		</div><!--copies-->
+		<div class="cta_btn"><a href="#entry"><p>エントリーする</p><div class="arrow"></div></a></div>
+	</div><!--cts-->
+</section><!--cta-->
+
+
+
+<!--INTERVIEW-->
+<section id="interview">
+	<div class="cts">
+		<div class="titles">
+			<div class="icon inviewfadeInUp"><img src="img/interview_icon.svg" alt="先輩のインタビュー"></div>
+			<h2 class="inviewfadeInUp">先輩<span class="fr">インタビュー</span></h2>
+			<p class="copy inviewfadeInUp">●●●キャッチコピー●●●</p>
+		</div><!--titles-->
+
+		<div class="tabs">
+            <p class="tab tab1 on">先輩1</p>
+            <p class="tab tab2">先輩2</p>
+			<p class="tab tab3">先輩3</p>
+        </div><!--tabs-->
+
+		<div class="interviews inviewfadeIn">
+			<!--INTERVIEW 1-->
+			<div class="interview interview1">
+				<div class="details">
+					<div class="photos">
+						<div class="photo"><img src="img/interview_1.jpg" alt=""></div>
+						<p class="name">●●●名前●●●</p>
+						<p class="position">●●●年入社 / ●●●部署●●●</p>
+					</div><!--photos-->
+
+					<div class="detail">
+						<div class="messages">
+							<h3>●●●キャッチコピー●●●</h3>
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+						</div><!--messages-->
+					</div><!--detail-->
+				</div><!--details-->
+			</div><!--interview-->
+
+			<!--INTERVIEW 2-->
+			<div class="interview interview2">
+				<div class="details">
+					<div class="photos">
+						<div class="photo"><img src="img/interview_2.jpg" alt=""></div>
+						<p class="name">●●●名前●●●</p>
+						<p class="position">●●●年入社 / ●●●部署●●●</p>
+					</div><!--photos-->
+
+					<div class="detail">
+						<h3>●●●キャッチコピー●●●</h3>
+						<div class="messages">
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+						</div><!--messages-->
+					</div><!--detail-->
+				</div><!--details-->
+			</div><!--interview-->
+
+			<!--INTERVIEW 3-->
+			<div class="interview interview3">
+				<div class="details">
+					<div class="photos">
+						<div class="photo"><img src="img/interview_3.jpg" alt=""></div>
+						<p class="name">●●●名前●●●</p>
+						<p class="position">●●●年入社 / ●●●部署●●●</p>
+					</div><!--photos-->
+
+					<div class="detail">
+						<h3>●●●キャッチコピー●●●</h3>
+						<div class="messages">
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+
+							<div class="message">
+								<h4><span>●●●キャッチコピー●●●</span></h4>
+								<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト</p>
+							</div><!--message-->
+						</div><!--messages-->
+					</div><!--detail-->
+				</div><!--details-->
+			</div><!--interview-->
+		</div><!--interviews-->
+	</div><!--cts-->
+</section><!--interview-->
+
+
+
+<!--PROCESS-->
+<section id="process">
+	<div class="cts">
+		<div class="titles">
+			<div class="icon inviewfadeInUp"><img src="img/process_icon.svg" alt="選考プロセス"></div>
+			<h2 class="inviewfadeInUp">選考<span class="fr">プロセス</span></h2>
+			<p class="copy inviewfadeInUp">●●●キャッチコピー●●●</p>
+		</div><!--titles-->
+
+		<div class="steps">
+			<div class="flowline"></div>
+
+			<div class="step">
+                <p class="number">1</p>
+				<div class="illust"><img src="img/process_1.svg" alt=""></div>
+                <div class="detail">
+				    <p class="status">エントリー</p>
+                    <p class="tx">フォームから応募ください</p>
+                </div><!--detail-->
+			</div><!--step-->
+
+			<div class="step">
+                <p class="number">2</p>
+				<div class="illust"><img src="img/process_2.svg" alt=""></div>
+				<div class="detail">
+				    <p class="status">書類選考</p>
+                    <p class="tx">書類による審査を行います</p>
+                </div><!--detail-->
+			</div><!--step-->
+
+			<div class="step">
+                <p class="number">3</p>
+				<div class="illust"><img src="img/process_3.svg" alt=""></div>
+				<div class="detail">
+				    <p class="status">面接</p>
+                    <p class="tx">WEB面接も可能です</p>
+                </div><!--detail-->
+			</div><!--step-->
+
+			<div class="step">
+                <p class="number">4</p>
+				<div class="illust"><img src="img/process_4.svg" alt=""></div>
+				<div class="detail">
+				    <p class="status">内定</p>
+                    <p class="tx">これからを話し合います</p>
+                </div><!--detail-->
+			</div><!--step-->
+		</div><!--steps-->
+	</div><!--cts-->
+</section><!--process-->
+
+
+
+<!--CTA-->
+<section class="cta">
+	<div class="cts">
+		<div class="copies">
+			<p class="subcopy">業界未経験も歓迎</p>
+			<p class="maincopy">興味ある方はまずはお気軽に<br>お問い合わせください！</p>
+		</div><!--copies-->
+		<div class="cta_btn"><a href="#entry"><p>エントリーする</p><div class="arrow"></div></a></div>
+	</div><!--cts-->
+</section><!--cta-->
+
+
+
+<!--FAQ-->
+<section id="faq">
+	<div class="cts">
+		<div class="titles">
+			<div class="icon inviewfadeInUp"><img src="img/faq_icon.svg" alt="よくある質問"></div>
+			<h2 class="inviewfadeInUp">よくある<span class="fr">質問</span></h2>
+			<p class="copy inviewfadeInUp">●●●キャッチコピー●●●</p>
+		</div><!--titles-->
+
+		<div class="faqs">
+			<div class="faq">
+				<div class="question">
+					<p class="item">Q</p>
+					<h3>●●●よくある質問●●●</h3>
+				</div><!--question-->
+				<div class="answer">
+					<p class="item">A</p>
+					<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+				</div><!--answer-->
+			</div><!--faq-->
+
+			<div class="faq">
+				<div class="question">
+					<p class="item">Q</p>
+					<h3>●●●よくある質問●●●</h3>
+				</div><!--question-->
+				<div class="answer">
+					<p class="item">A</p>
+					<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+				</div><!--answer-->
+			</div><!--faq-->
+
+			<div class="faq">
+				<div class="question">
+					<p class="item">Q</p>
+					<h3>●●●よくある質問●●●</h3>
+				</div><!--question-->
+				<div class="answer">
+					<p class="item">A</p>
+					<p class="tx">●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●サンプルテキスト●</p>
+				</div><!--answer-->
+			</div><!--faq-->
+		</div><!--faqs-->
+	</div><!--cts-->
+</section><!--faq-->
+
+
+
+<!--CTA-->
+<section class="cta">
+	<div class="cts">
+		<div class="copies">
+			<p class="subcopy">業界未経験も歓迎</p>
+			<p class="maincopy">興味ある方はまずはお気軽に<br>お問い合わせください！</p>
+		</div><!--copies-->
+		<div class="cta_btn"><a href="#entry"><p>エントリーする</p><div class="arrow"></div></a></div>
+	</div><!--cts-->
+</section><!--cta-->
+
+
+
+<!--BACK TO TOP-->
+<div class="BackToTop"><a href="#top"><img src="img/BackToTop.svg" alt="ページトップへ"></a></div>
+
+{!! $footer !!}
