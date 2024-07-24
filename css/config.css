@@ -11,10 +11,10 @@ body,div,p,a,article,section,nav,ul,li,header,footer,input,select,textarea,h1,h2
 font-size:1em;
 font-weight:400;
 line-height:160%;
-letter-spacing:0.5px;
+letter-spacing:0;
 word-wrap:break-word;
-color:#000;
-font-family:'Poppins','Noto Sans JP', sans-serif;
+color:#1e1e1e;
+font-family:'Noto Sans JP', sans-serif;
 }
 
 img {
@@ -53,8 +53,10 @@ a:hover {
 animation:hover 0.5s ease forwards;
 }
 
-.fr {color:#ff0000;}
-.fg {color:#081295;}
+.fr {color:#db3535;}
+.fdb {color:#004da0;}
+.fb {color:#009fe8;}
+.flb {color:#ebf6fd;}
 
 .b {font-weight:bold;}
 .fl{font-size:120%;}

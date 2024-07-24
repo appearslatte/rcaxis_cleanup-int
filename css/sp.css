@@ -11,6 +11,10 @@ Common CSS
     display:none;
 }
 
+.en {
+    font-family:'Jost', sans-serif;
+}
+
 .cts {
     width:90%;
 }
@@ -26,6 +30,17 @@ Common CSS
     line-height:135%;
 }
 
+.titles .en {
+    font-size:120%;
+    font-weight:600;
+    color:#009fe8;
+    padding-bottom:3px;
+}
+
+.titles .line {
+    margin:0 auto 7px;
+}
+
 .titles .icon {
     width:60px;
     margin:0 auto 10px;
@@ -34,6 +49,21 @@ Common CSS
 .titles .copy {
     font-size:100%;
     font-weight:600;
+    padding-top:7px;
+}
+
+.triangle_l {
+    position:absolute;
+    top:0;
+    left:0;
+    width:300px;
+}
+
+.triangle_r {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:500px;
 }
 
 
@@ -41,19 +71,20 @@ Common CSS
 /*FIXED CTA*/
 .fixed_cta {
     position:fixed;
-    top:0;
-    right:0;
+    top:10px;
+    right:10px;
     z-index:9999;
 }
 
 .fixed_cta a {
-    width:70px;
-    height:70px;
-    background:#ccc;
+    width:80px;
+    height:80px;
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-items:center;
+    background:url(../img/cta_bg.svg) center no-repeat;
+    background-size:100%;
 }
 
 .fixed_cta a img {
@@ -77,17 +108,200 @@ Common CSS
     width:100%;
     height:100vh;
     background:#fff;
+    overflow:hidden;
 }
+
+#mv .cts {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:row-reverse;
+    position:relative;
+}
+
+#mv h1 {
+    position:absolute;
+    width:60px;
+    top:10px;
+    left:10px;
+    z-index:1000;
+}
+
+#mv .bg {
+    width:100%;
+    height:100%;
+}
+
+#mv .mv_slider {
+    width:100%;
+    height:90vh;
+}
+
+#mv .mv {
+}
+
+#mv .mv1 {
+    background:url(../img/mv_1_sp.jpg) bottom center;
+    background-size:cover;
+}
+
+#mv .mv2 {
+    background:url(../img/mv_2_sp.jpg) bottom center;
+    background-size:cover;
+}
+
+#mv .mv3 {
+    background:url(../img/mv_3.jpg) center;
+    background-size:cover;
+}
+
+#mv .copyarea {
+    width:400px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+#mv .copyarea .bg {
+    display:flex;
+    align-items:center;
+}
+
+#mv .copyarea .bg .bg1 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:150px;
+    z-index:1000;
+}
+
+#mv .copyarea .bg .bg2 {
+    position:absolute;
+    left:0;
+    width:60px;
+    z-index:1;
+}
+
+#mv .copyarea .bg .bg3 {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:85vw;
+}
+
+#mv .copies {
+    position:absolute;
+    left:0;
+    bottom:20px;
+    z-index:1000;
+}
+
+#mv .copies .jobs {
+    display:flex;
+    margin-bottom:7px;
+    padding-left:12px;
+}
+
+#mv .copies .jobs .job {
+    margin-right:5px;
+}
+
+#mv .copies .jobs .job p {
+    background:#004da0;
+    color:#fff;
+    border:#fff 1px solid;
+    font-size:80%;
+    font-weight:500;
+    line-height:100%;
+    padding:6px 10px 8px;
+    display:inline-block;
+}
+
+#mv .copies .maincopies {
+    margin-bottom:10px;
+    padding-left:5px;
+}
+
+#mv .copies .maincopies .maincopy {
+}
+
+#mv .copies .maincopies .maincopy img {
+    width:auto;
+    height:70px;
+}
+
+#mv .copies .maincopies .maincopy1 {
+
+}
+
+#mv .copies .maincopies .maincopy2 {
+
+}
+
+#mv .copies .subcopy {
+    font-size:90%;
+    font-weight:bold;
+    line-height:100%;
+    color:#fff;
+    padding-left:15px;
+}
+
+#mv .triangle_br {
+    width:200px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index:999;
+}
+
+#mv .points {
+    position:absolute;
+    bottom:20px;
+    right:0;
+    z-index:1000;
+}
+
+#mv .points .point {
+    margin-top:8px;
+    text-align:right;
+}
+
+#mv .points .point p {
+    background:#fff;
+    display:inline-block;
+    font-size:90%;
+    font-weight:600;
+    line-height:100%;
+    padding:6px 10px 8px;
+}
+
 
 
 
 /*INTRO*/
 #intro {
     padding:50px 0;
+    position:relative;
+}
+
+#intro .triangle_l {
+    width:100px;
+}
+
+#intro .triangle_r {
+    width:250px;
+}
+
+#intro .cts {
+    position:relative;
 }
 
 #intro .titles h2 {
-    font-size:150%;
+    font-size:180%;
 }
 
 #intro .details {
@@ -123,8 +337,98 @@ Common CSS
 
 /*ABOUT*/
 #about {
-    padding:50px 0;
-    background:#ccc;
+    padding:0;
+    background:#fff;
+    position:relative;
+}
+
+#about .bg {
+    width:100%;
+    height:80vw;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+#about .about_slider {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+#about .bg .photo {
+    width:100%;
+    height:100%;
+}
+
+#about .bg .photo1  {
+    background:url(../img/about_1.jpg) center;
+    background-size:cover;
+}
+
+#about .bg .photo2 {
+    background:url(../img/about_2.jpg) center;
+    background-size:cover;
+}
+
+#about .bg .photo3 {
+    background:url(../img/about_3.jpg) center;
+    background-size:cover;
+}
+
+#about .cts {
+}
+
+#about .detail {
+    padding:25px 0;
+    position:relative;
+    z-index:999;
+}
+
+#about .detail h3 {
+    font-size:160%;
+    font-weight:bold;
+    line-height:135%;
+    color:#004da0;
+    padding-bottom:15px;
+    text-align:center;
+}
+
+#about .detail .tx {
+}
+
+#about .copies {
+    position:absolute;
+    left:15px;
+    top:40vw;
+    z-index:999;
+}
+
+#about .copies .typos {
+    margin-bottom:10px;
+}
+
+#about .copies .typos .typo {
+    margin-top:10px;
+}
+
+#about .copies .typos .typo img {
+    width:auto;
+    height:25px;
+}
+
+#about .copies .copy {
+    font-size:90%;
+    font-weight:bold;
+    color:#fff;
+}
+
+
+
+/*SCENE*/
+#scene {
+    background:#ebf6fd;
+    padding:25px 0;
 }
 
 
@@ -134,6 +438,15 @@ Common CSS
 /*FEATURE*/
 #feature {
     padding:50px 0;
+    position:relative;
+}
+
+#feature .triangle_l {
+    width:250px;
+}
+
+#feature .triangle_r {
+    width:150px;
 }
 
 #feature .cts {
@@ -141,6 +454,7 @@ Common CSS
 }
 
 #feature .features {
+    position:relative;
 }
 
 #feature .features .feature {
@@ -152,9 +466,9 @@ Common CSS
 }
 
 #feature .features .feature .photo {
-    width:95%;
+    width:90%;
     height:60vw;
-    margin-bottom:20px;
+    margin:0 auto 20px;
 }
 
 #feature .features .feature .photo1 {
@@ -177,19 +491,19 @@ Common CSS
     margin:auto;
 }
 
-#feature .features .feature .detail .number {
+#feature .features .feature .detail .en {
     font-size:350%;
     font-weight:600;
     line-height:100%;
-    color:#e1e1e1;
+    color:#009fe8;
     padding-bottom:10px;
     text-align:center;
 }
 
 #feature .features .feature .detail h3 {
-    font-size:120%;
+    font-size:145%;
     font-weight:600;
-    line-height:135%;
+    line-height:145%;
     padding-bottom:10px;
     text-align:center;
 }
@@ -205,6 +519,19 @@ Common CSS
 #interview {
     padding:50px 0 25px;
     background:#e1e1e1;
+    position:relative;
+}
+
+#interview .triangle_l {
+    width:150px;
+}
+
+#interview .triangle_r {
+    width:200px;
+}
+
+#interview .cts {
+    position:relative;
 }
 
 #interview .tabs {
@@ -216,7 +543,7 @@ Common CSS
     font-size:90%;
     font-weight:500;
     line-height:100%;
-    background:#ccc;
+    background:#c8c8c8;
     color:#fff;
     padding:10px 15px 10px;
     margin:0 5px;
@@ -224,8 +551,8 @@ Common CSS
 }
 
 #interview .tabs .tab.on {
-    background:#fff;
-    color:#000;
+    background:#004da0;
+    color:#fff;
 }
 
 #interview .interviews {
@@ -256,7 +583,7 @@ Common CSS
 }
 
 #interview .interviews .interview .details .photos .photo {
-    width:60%;
+    width:100%;
     margin:0 auto 20px;
 }
 
@@ -273,11 +600,12 @@ Common CSS
     width:100%;
 }
 
-#interview .interviews .interview .details .detail h3 {
+#interview .interviews .interview h3 {
     font-size:120%;
-    font-weight:600;
-    line-height:135%;
+    font-weight:bold;
+    line-height:145%;
     padding-bottom:25px;
+    color:#004da0;
     text-align:center;
 }
 
@@ -294,16 +622,14 @@ Common CSS
 }
 
 #interview .interviews .interview .details .detail .messages .message h4 {
-    border-bottom:#000 1px solid;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 #interview .interviews .interview .details .detail .messages .message h4 span {
-    border-left:#000 5px solid;
+    border-left:#009fe8 5px solid;
     padding:5px 0 5px 10px;
     font-weight:600;
     line-height:100%;
-    margin-bottom:10px;
     display:inline-block;
 }
 
@@ -317,6 +643,19 @@ Common CSS
 /*PROCESS*/
 #process {
     padding:50px 0 25px;
+    position:relative;
+}
+
+#process .triangle_l {
+    width:120px;
+}
+
+#process .triangle_r {
+    width:250px;
+}
+
+#process .cts {
+    position:relative;
 }
 
 #process .steps {
@@ -326,51 +665,36 @@ Common CSS
     position:relative;
 }
 
-#process .steps .flowline {
-    width:20px;
-    height:100%;
-    background:#e1e1e1;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    margin:auto;
-}
-
 #process .steps .step {
     width:100%;
     position:relative;
     background:#fff;
-    border:#ccc 1px solid;
-    margin-bottom:20px;
+    border-bottom:#c8c8c8 1px solid;
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:15px 0;
+}
+
+#process .steps .step:first-child {
+    border-top:#c8c8c8 1px solid;
 }
 
 #process .steps .step:last-child {
     margin-bottom:0;
 }
 
-#process .steps .step .number {
-    width:30px;
-    height:30px;
-    border:#ccc 1px solid;
-    border-radius:20vw;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+#process .steps .step .en {
+    font-size:125%;
+    font-weight:600;
     text-align:center;
-    position:absolute;
-    top:-15px;
-    left:0;
-    right:0;
-    margin:auto;
+    color:#009fe8;
+    margin-right:15px;
 }
 
 #process .steps .step .illust {
-    width:100px;
-    height:100px;
+    width:90px;
+    height:90px;
     margin-right:20px;
 }
 
@@ -394,7 +718,21 @@ Common CSS
 
 /*FAQ*/
 #faq {
-    padding:70px 0;
+    padding:50px 0;
+    position:relative;
+}
+
+#faq .triangle_l {
+    width:150px;
+}
+
+#faq .triangle_r {
+    width:250px;
+}
+
+#faq .cts {
+    width:90%;
+    position:relative;
 }
 
 #faq .faqs {
@@ -418,8 +756,7 @@ Common CSS
 #faq .faqs .faq .question .item {
     width:40px;
     height:40px;
-    background:#000;
-    color:#fff;
+    color:#004da0;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -429,10 +766,13 @@ Common CSS
 }
 
 #faq .faqs .faq .question h3 {
-    width:calc(100% - 55px);
+    width:calc(100% - 40px);
     font-size:100%;
     font-weight:600;
     line-height:135%;
+    color:#004da0;
+    border-left:#c8c8c8 1px solid;
+    padding-left:15px;
 }
 
 #faq .faqs .faq .answer {
@@ -443,17 +783,18 @@ Common CSS
 #faq .faqs .faq .answer .item {
     width:40px;
     height:40px;
-    border:#000 1px solid;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:120%;
+    font-size:110%;
     font-weight:600;
     text-align:center;
 }
 
 #faq .faqs .faq .answer .tx {
-    width:calc(100% - 55px);
+    width:calc(100% - 40px);
+    border-left:#c8c8c8 1px solid;
+    padding-left:15px;
 }
 
 
@@ -462,12 +803,40 @@ Common CSS
 /*CTA*/
 .cta {
     width:100%;
-    padding:35px 0;
-    background:#e1e1e1;
+    padding:0;
+    background:#004da0;
+    overflow:hidden;
 }
 
 .cta .cts {
+    width:90%;
+    position:relative;
     text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 0;
+}
+
+.cta .blank {
+    display:none;
+}
+
+.cta .photos {
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.cta .photos .bg {
+    width:90vw;
+    position:absolute;
+}
+
+.cta .photos .photo {
+    width:60%;
+    position:relative;
 }
 
 .cta .copies {
@@ -475,27 +844,36 @@ Common CSS
 }
 
 .cta .copies .subcopy {
-    font-size:90%;
-    line-height:500;
-    line-height:100%;
-    border:#000 1px solid;
-    display:inline-block;
-    padding:8px 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     margin-bottom:10px;
 }
 
+.cta .copies .subcopy p {
+    font-size:80%;
+    line-height:100%;
+    border:#fff 1px solid;
+    color:#fff;
+    padding:8px 12px;
+    margin:0 5px;
+    position:relative;
+}
+
 .cta .copies .maincopy {
-    font-size:110%;
-    font-weight:600;
+    font-size:125%;
+    font-weight:bold;
     line-height:135%;
     padding-bottom:15px;
+    color:#fff;
+    position:relative;
 }
 
 .cta .cta_btn {
     width:100%;
     display:inline-block;
-    animation:cta linear 1s infinite alternate;
-    -webkit-animation:cta linear 1s infinite alternate;
+    animation:cta 1s infinite alternate;
+    -webkit-animation:cta 1s infinite alternate;
 }
 
 .cta .cta_btn a {
@@ -505,25 +883,26 @@ Common CSS
     justify-content:center;
     align-items:center;
     position:relative;
-    background:#000;
-    padding:25px 50px;
+    background:url(../img/cta_btn_bg.png) center no-repeat;
+    background-size:100% 100%;
+    padding:20px 0;
 }
 
 .cta .cta_btn a p {
-    font-size:120%;
+    font-size:135%;
     font-weight:600;
     line-height:100%;
     color:#fff;
 }
 
 .cta .cta_btn a .arrow {
-    width:10px;
-    height:10px;
-    border-top:#fff 1px solid;
-    border-right:#fff 1px solid;
+    width:15px;
+    height:15px;
+    border-top:#fff 2px solid;
+    border-right:#fff 2px solid;
     transform:rotate(45deg);
     position:absolute;
-    right:25px;
+    right:40px;
 }
 
 
@@ -534,7 +913,15 @@ Common CSS
 #entry {
     padding:50px 0 30px;
     position:relative;
-    background:#e1e1e1;
+    background:#ebf6fd;
+}
+
+#entry .triangle_l {
+    width:120px;
+}
+
+#entry .triangle_r {
+    width:200px;
 }
 
 #entry .cts {
@@ -566,6 +953,7 @@ Common CSS
     line-height:100%;
     color:#c8c8c8;
     padding-bottom:10px;
+    font-family:'Jost', sans-serif;
 }
 
 #entry .entry_form .entry_cts .question {
@@ -626,7 +1014,7 @@ Common CSS
 
 #entry .entry_form .steps .step {
     height:50px;
-    background:linear-gradient(to right,#555,#000);
+    background:linear-gradient(to right,#004da0,#00398c);
     display:flex;
     justify-content:center;
     flex-direction:column;
@@ -635,11 +1023,11 @@ Common CSS
 }
 
 #entry .entry_form .steps .step.now {
-    background:#aaa;
+    background:#009fe8;
 }
 
 #entry .entry_form .steps .step.past {
-    background:linear-gradient(to right,#ccc,#bbb);
+    background:linear-gradient(to right,#414141,#323232);
 }
 
 #entry .entry_form .steps .step:after {
@@ -647,7 +1035,7 @@ Common CSS
     border-top:transparent 25px solid;
     border-right:transparent 10px solid;
     border-bottom:transparent 25px solid;
-    border-left:#000 10px solid;
+    border-left:#00398c 10px solid;
     position:absolute;
     top:0;
     right:-20px;
@@ -659,7 +1047,7 @@ Common CSS
     border-top:transparent 25px solid;
     border-right:transparent 10px solid;
     border-bottom:transparent 25px solid;
-    border-left:#aaa 10px solid;
+    border-left:#009fe8 10px solid;
     position:absolute;
     top:0;
     right:-20px;
@@ -671,7 +1059,7 @@ Common CSS
     border-top:transparent 25px solid;
     border-right:transparent 10px solid;
     border-bottom:transparent 25px solid;
-    border-left:#bbb 10px solid;
+    border-left:#323232 10px solid;
     position:absolute;
     top:0;
     right:-20px;
@@ -690,7 +1078,7 @@ display:none;
 
 #entry .entry_form .steps .step p:first-child {
     font-size:100%;
-    padding-bottom:3px;
+    padding-bottom:7px;
 }
 
 #entry .entry_form .steps .step p:last-child {
@@ -706,16 +1094,15 @@ display:none;
 }
 
 #entry.entry_status label {
-    border:#000 3px solid;
-    color:#000;
-    padding:20px;
+    border:#004da0 3px solid;
+    color:#004da0;
+    padding:15px;
     display:block;
     cursor:pointer;
-    border-radius:10px;
     font-size:120%;
     font-weight:600;
     margin:0 7px;
-    width:150px;
+    width:120px;
 }
 
 
@@ -833,10 +1220,9 @@ display:none;
     width:150px;
     font-size:120%;
     font-weight:600;
-    color:#000;
-    border:#000 3px solid;
+    color:#004da0;
+    border:#004da0 3px solid;
     padding:15px 20px;
-    border-radius:10px;
     margin:0 7px;
     display:block;
     cursor:pointer;
@@ -880,20 +1266,18 @@ display:none;
 
 #entry.entry_name .style_name {
     width:100%;
-    color:#000;
-    border:#000 3px solid;
+    color:#004da0;
+    border:#004da0 3px solid;
     padding:15px 20px;
-    border-radius:10px;
     font-size:120%;
     font-weight:600;
 }
 
 #entry.entry_name .style_kana {
     width:100%;
-    color:#000;
-    border:#000 3px solid;
+    color:#004da0;
+    border:#004da0 3px solid;
     padding:15px 20px;
-    border-radius:10px;
     font-size:120%;
     font-weight:600;
 }
@@ -965,10 +1349,9 @@ display:none;
     width:100%;
     font-size:120%;
     font-weight:600;
-    color:#000;
-    border:#000 3px solid;
+    color:#004da0;
+    border:#004da0 3px solid;
     padding:15px 20px;
-    border-radius:10px;
 }
 
 
@@ -996,10 +1379,9 @@ display:none;
     width:100%;
     font-size:120%;
     font-weight:600;
-    color:#000;
-    border:#000 3px solid;
+    color:#004da0;
+    border:#004da0 3px solid;
     padding:15px 20px;
-    border-radius:10px;
 }
 
 
@@ -1116,7 +1498,7 @@ display:none;
     font-size:120%;
     font-weight:bold;
     line-height:100%;
-    color:#000;
+    color:#004da0;
     margin-top:5px;
 }
 
@@ -1189,7 +1571,7 @@ display:none;
     font-size:200%;
     font-weight:bold;
     padding-bottom:25px;
-    color:#000;
+    color:#004da0;
 }
 
 #entry.thanks .ex {
@@ -1216,21 +1598,21 @@ display:none;
     display:flex;
     justify-content:center;
     align-items:center;
-    border:#000 1px solid;
+    border:#004da0 1px solid;
     padding:10px 20px;
 }
 
 #entry.thanks .backbtn .btn a p {
     font-weight:500;
-    color:#000;
+    color:#004da0;
     padding-left:10px;
 }
 
 #entry.thanks .backbtn .btn a .arrow {
     width:10px;
     height:10px;
-    border-top:#000 1px solid;
-    border-right:#000 1px solid;
+    border-top:#004da0 1px solid;
+    border-right:#004da0 1px solid;
     transform:rotate(-135deg);
 }
 
@@ -1257,7 +1639,7 @@ position:absolute;
 #entry .warning {
 font-size:90%;
 font-weight:600;
-color:#cc2b00;
+color:#db3535;
 margin:10px auto 15px;
 display:block;
 border:none;
@@ -1269,12 +1651,12 @@ text-align:center;
 }
 
 #entry input[type="radio"]:checked + label {
-    background:#000;
+    background:#004da0;
     color:#fff;
 }
 
 #entry input[type="checkbox"]:checked + label {
-    background:#000;
+    background:#004da0;
     color:#fff;
 }
 
@@ -1291,7 +1673,7 @@ animation:hover 0.5s ease forwards;
 font-size:90%;
 font-weight:500;
 padding:10px 20px;
-background:#ccc;
+background:#717071;
 color:#fff;
 border:none;
 border-radius:5px;
@@ -1310,7 +1692,7 @@ font-weight:600;
 padding:12px 30px;
 background:#fff;
 border:none;
-background:#000;
+background:#db3535;
 color:#fff;
 border-radius:5px;
 }
@@ -1336,30 +1718,38 @@ display:none;
 /*FOOTER*/
 footer {
 padding:30px 0 15px;
+background:#1e1e1e;
 }
 
-footer .info {
-    text-align:center;
+footer .infos {
     padding-bottom:30px;
 }
 
-footer .info .logo {
+footer .infos .logo {
     width:80px;
-    margin:0 auto 10px;
+    margin:0 auto 20px;
 }
 
-footer .info .company {
-    font-size:100%;
+footer .infos .info {
+    text-align:center;
+}
+
+footer .infos .info .company {
+    font-size:90%;
     font-weight:bold;
+    color:#fff;
+    padding-bottom:5px;
 }
 
-footer .info .address {
-    font-size:8%;
+footer .infos .info .address {
+    font-size:80%;
+    color:#fff;
 }
 
 footer .copyright {
 font-size:60%;
 text-align:center;
+color:#595757;
 }
 
 

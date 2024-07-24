@@ -1,12 +1,14 @@
 
 <!--FOOTER-->
 <footer>
-	<div class="info">
-		<div class="logo"><img src="img/logo.png" alt=""></div>
-		<p class="company">●●●●●会社名●●●●●</p>
-		<p class="address">〒●●●-●●●●<br class="sp">●●●●●住所●●●●●</p>
-	</div><!--info-->
-    <p class="copyright">Copyright&copy;<script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>. ●●●. All Rights Reserved.</p>
+    <div class="infos">
+        <div class="logo inviewfadeInUp"><img src="img/logo_w.svg" alt="CLEAN UP INTERNATIONAL"></div>
+        <div class="info">
+            <p class="company inviewfadeInUp">株式会社クリーンアップ・インターナショナル</p>
+            <p class="address inviewfadeInUp">〒150-6030<br>東京都渋谷区恵比寿4-20-3<br>恵比寿ガーデンプレイスタワー30F</p>
+        </div><!--info-->
+    </div><!--infos-->
+    <p class="copyright inviewfadeInUp">Copyright&copy;<script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>. Clean Up International inc. <br class="sp">All Rights Reserved.</p>
 </footer>
 
 <!--JS-->
@@ -21,6 +23,34 @@
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/additional-methods.min.js"></script>
 <script src="?p=v"></script>
+
+<!--INTERVIEW-->
+<script>
+	$(".tab1").click(function () {
+		$(this).addClass('on');
+		$(".interview1").show();
+		$(".interview2").hide();
+		$(".interview3").hide();
+		$(".tab2").removeClass('on');
+		$(".tab3").removeClass('on');
+	});
+	$(".tab2").click(function () {
+		$(this).addClass('on');
+		$(".interview1").hide();
+		$(".interview2").show();
+		$(".interview3").hide();
+		$(".tab1").removeClass('on');
+		$(".tab3").removeClass('on');
+	});
+	$(".tab3").click(function () {
+		$(this).addClass('on');
+		$(".interview1").hide();
+		$(".interview2").hide();
+		$(".interview3").show();
+		$(".tab1").removeClass('on');
+		$(".tab2").removeClass('on');
+	});
+</script>
 
 </div><!--wrap-->
 </body>
