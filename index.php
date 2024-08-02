@@ -56,16 +56,17 @@ $_conf['mail_body_user'] = <<<EOP
 
 =======================================
 株式会社クリーンアップ・インターナショナル
-〒xxx-xxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TEL：xxxxxxxxxxxxx
+〒150-6030
+東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー30F
+TEL：03-5770-3382
 =======================================
 
 EOP;
 // メール本文（送信者への返信メール）ここまで
 
 //##### ページ項目設定
-$_conf['use_page'] = ['status', 'age', 'name', 'tel', 'email'];
+$_conf['use_page'] = ['status', 'job', 'age', 'name', 'contact'];
+$_conf['page_datas']['job']['form_datas']['job']['check_vals'] = ['投資用付不動産販売', '退去立会い・施工管理'];
 
 //##### recruit-axis 送信設定
 if(true) {
