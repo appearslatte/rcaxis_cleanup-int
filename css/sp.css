@@ -1120,12 +1120,11 @@ display:none;
 }
 
 #entry.entry_job label {
-    border:#000 3px solid;
-    color:#000;
+    border:#004da0 3px solid;
+    color:#004da0;
     padding:15px;
     display:block;
     cursor:pointer;
-    border-radius:10px;
     font-size:120%;
     font-weight:600;
     margin:0 7px;
@@ -1308,20 +1307,18 @@ display:none;
     width:100%;
     font-size:120%;
     font-weight:600;
-    color:#000;
-    border:#000 3px solid;
+    color:#004da0;
+    border:#004da0 3px solid;
     padding:15px 20px;
-    border-radius:10px;
 }
 
 #entry.entry_contact .style_mail {
     width:100%;
     font-size:120%;
     font-weight:600;
-    color:#000;
-    border:#000 3px solid;
+    color:#004da0;
+    border:#004da0 3px solid;
     padding:15px 20px;
-    border-radius:10px;
 }
 
 
