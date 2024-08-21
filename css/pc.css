@@ -330,7 +330,7 @@ Common CSS
 
 /*ABOUT*/
 #about {
-    padding:50px 0;
+    padding:70px 0;
     background:#fff;
     position:relative;
 }
@@ -384,7 +384,7 @@ Common CSS
 }
 
 #about .detail h3 {
-    font-size:180%;
+    font-size:200%;
     font-weight:bold;
     line-height:135%;
     color:#004da0;
@@ -392,6 +392,7 @@ Common CSS
 }
 
 #about .detail .tx {
+    line-height:180%;
 }
 
 #about .copies {
