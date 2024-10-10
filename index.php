@@ -66,7 +66,7 @@ EOP;
 
 //##### ページ項目設定
 $_conf['use_page'] = ['status', 'job', 'age', 'name', 'contact'];
-$_conf['page_datas']['job']['form_datas']['job']['check_vals'] = ['投資用付不動産販売', '退去立会い・施工管理'];
+$_conf['page_datas']['job']['form_datas']['job']['check_vals'] = ['投資用不動産販売／東京勤務', '投資用不動産販売／大阪勤務', '退去立会い・施工管理／東京勤務'];
 
 //##### recruit-axis 送信設定
 if(true) {

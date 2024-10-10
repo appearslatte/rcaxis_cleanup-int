@@ -1109,16 +1109,20 @@ display:none;
     justify-content:center;
 }
 
+#entry.entry_job .answer p:last-child {
+    margin-top:15px;
+}
+
 #entry.entry_job label {
     border:#004da0 3px solid;
     color:#004da0;
-    padding:20px;
+    padding:18px 10px;
     display:block;
     cursor:pointer;
-    font-size:125%;
+    font-size:120%;
     font-weight:600;
     margin:0 7px;
-    width:300px;
+    width:360px;
 }
 
 
